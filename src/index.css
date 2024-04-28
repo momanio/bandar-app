@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+#root {
+  height: 100%;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #ffffff;
+  transition: background-color 5000s ease-in-out 0s;
+}
+input:-webkit-autofill {
+  -webkit-text-fill-color: #9ea0a5 !important;
+}
+
+.filter-icon {
+  filter: invert(38%) sepia(78%) saturate(4819%) hue-rotate(344deg)
+    brightness(101%) contrast(90%);
+}
