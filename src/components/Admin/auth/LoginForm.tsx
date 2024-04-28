@@ -204,6 +204,7 @@ const LoginForm = () => {
             </div>
             <Button
               variant="contained"
+              type="submit"
               sx={{
                 backgroundColor: "#F23A3A",
                 fontSize: 18,

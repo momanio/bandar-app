@@ -213,7 +213,7 @@ const Header = () => {
               onChange={handleChange}
               aria-label="icon label tabs example"
               sx={{
-                "& .Mui-selected": { color: "#f23a3a" },
+                "&& .Mui-selected": { color: "#f23a3a" },
                 ".MuiTabs-indicator": {
                   backgroundColor: "#f23a3a",
                   boxShadow:
@@ -346,8 +346,8 @@ const Header = () => {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
+              {settings.map((setting, index) => (
+                <MenuItem key={index} onClick={handleCloseUserMenu}>
                   <Typography textAlign="center">{setting}</Typography>
                 </MenuItem>
               ))}
