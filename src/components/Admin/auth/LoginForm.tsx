@@ -198,7 +198,7 @@ const LoginForm = () => {
                   />
                 )}
               />
-              <Link to="#" className="text-white w-fit">
+              <Link to="#" className="text-white w-fit mb-5">
                 هل نسيت كلمة المرور ؟
               </Link>
             </div>
