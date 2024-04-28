@@ -102,7 +102,7 @@ const Header = () => {
               }}
             >
               <MenuItem
-                key={"page"}
+                key={"1"}
                 selected={tabSelected.tabOne}
                 onClick={() => {
                   handleCloseNavMenu();
@@ -122,7 +122,7 @@ const Header = () => {
                 </Typography>
               </MenuItem>
               <MenuItem
-                key={"page"}
+                key={"2"}
                 selected={tabSelected.tabTwo}
                 onClick={() => {
                   handleCloseNavMenu();
@@ -142,7 +142,7 @@ const Header = () => {
                 </Typography>
               </MenuItem>
               <MenuItem
-                key={"page"}
+                key={"3"}
                 selected={tabSelected.tabThree}
                 onClick={() => {
                   handleCloseNavMenu();
@@ -162,7 +162,7 @@ const Header = () => {
                 </Typography>
               </MenuItem>
               <MenuItem
-                key={"page"}
+                key={"4"}
                 selected={tabSelected.tabFour}
                 onClick={() => {
                   handleCloseNavMenu();
