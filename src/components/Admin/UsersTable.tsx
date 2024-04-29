@@ -57,7 +57,7 @@ const rows = [
 
 const UsersTable = () => {
   const [row, setRows] = useState([]);
-
+  console.log(row);
   useEffect(() => {
     const fetchUsers = async () => {
       try {
