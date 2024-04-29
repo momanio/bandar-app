@@ -42,7 +42,6 @@ function App() {
       {(privateRoutes as IRoute[]).map((item: IRoute) => (
         <Route key={item.path} element={item.element} path={item.path} />
       ))}
-      <Route path="*" element={<Navigate to="/Login" replace />} />
     </Routes>
   );
 }

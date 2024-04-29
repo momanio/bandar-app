@@ -5,7 +5,6 @@ import UsersTable from "components/Admin/UsersTable";
 const AdminDashboard = () => {
   return (
     <MainLayout>
-      <Header />
       <UsersTable />
     </MainLayout>
   );
