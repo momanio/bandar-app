@@ -56,6 +56,12 @@ class APIService {
         });
     });
   }
+  getRequestUsers() {
+    return this.fetchData({
+      method: "GET",
+      url: "/api/admin/get-request-users",
+    });
+  }
 }
 // eslint-disable-next-line
 export default new APIService();
