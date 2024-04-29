@@ -74,7 +74,7 @@ const UsersTable = () => {
   return (
     <>
       <Title>قائمة طلبات التسجيل</Title>
-
+      <Title>Bla Bla</Title>
       <div className="relative overflow-x-auto shadow-md sm:rounded-lg bg-[#1a1d1f] min-w-0 flex flex-col justify-start items-stretch mx-4 sm:mx-8 md:mx-16 lg:mx-32 xl:mx-80 mt-42 pb-24 rounded-lg text-white">
         <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
           <thead className="text-xl text-gray-700 uppercase bg-gray-50 dark:bg-[#1a1d1f] dark:text-[#81858d]">
