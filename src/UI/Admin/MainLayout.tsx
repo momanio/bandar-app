@@ -1,4 +1,4 @@
-import Header from "components/Admin/Header";
+import Header from "components/shared/Header";
 
 const MainLayout = ({ children }: { children: React.ReactNode }) => {
   return (
