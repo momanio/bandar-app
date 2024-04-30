@@ -1,10 +1,10 @@
 import MainLayout from "UI/Admin/MainLayout";
-import UsersTable from "components/Admin/UsersTable";
+import { Outlet } from "react-router-dom";
 
 const AdminDashboard = () => {
   return (
     <MainLayout>
-      <UsersTable />
+      <Outlet />
     </MainLayout>
   );
 };

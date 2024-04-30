@@ -50,12 +50,11 @@ class APIService {
       .then((response) => response.data)
       .catch((error) => Promise.reject(error));
   }
-  // getRequestUsers() {
-  //   return this.fetchData({
-  //     method: "GET",
-  //     url: "/public/api/admin/get-request-users",
-  //   });
-  // }
 }
-// eslint-disable-next-line
 export default new APIService();
+// getRequestUsers() {
+//   return this.fetchData({
+//     method: "GET",
+//     url: "/public/api/admin/get-request-users",
+//   });
+// }

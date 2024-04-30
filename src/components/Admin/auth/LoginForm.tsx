@@ -99,7 +99,7 @@ const LoginForm = () => {
       };
       localStorage.setItem(ACCESS_TOKEN, res.token);
       localStorage.setItem("user-role", "admin");
-      navigate("/AdminDashboard");
+      navigate("/admin/dashboard/");
     } catch (err: any) {
       console.error("Error: ", err);
     } finally {
