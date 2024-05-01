@@ -81,41 +81,6 @@ const DummyData = [
     age: "25",
     date: "12/12/2020",
   },
-  {
-    name: "نائف عبدالله الديرة",
-    mobile: "0123456789",
-    email: "naifuiux@gmail.com",
-    age: "25",
-    date: "12/12/2020",
-  },
-  {
-    name: "نائف عبدالله الديرة",
-    mobile: "0123456789",
-    email: "naifuiux@gmail.com",
-    age: "25",
-    date: "12/12/2020",
-  },
-  {
-    name: "نائف عبدالله الديرة",
-    mobile: "0123456789",
-    email: "naifuiux@gmail.com",
-    age: "25",
-    date: "12/12/2020",
-  },
-  {
-    name: "نائف عبدالله الديرة",
-    mobile: "0123456789",
-    email: "naifuiux@gmail.com",
-    age: "25",
-    date: "12/12/2020",
-  },
-  {
-    name: "نائف عبدالله الديرة",
-    mobile: "0123456789",
-    email: "naifuiux@gmail.com",
-    age: "25",
-    date: "12/12/2020",
-  },
 ];
 
 const UsersTable = () => {
@@ -135,17 +100,20 @@ const UsersTable = () => {
             );
           })}
         </div>
-        <div className="h-full  overflow-y-scroll">
-          {DummyData.map((item, index) => (
-            <RequestCard
-              key={index}
-              name={item.name}
-              mobile={item.mobile}
-              email={item.email}
-              age={item.age}
-              date={item.date}
-            />
-          ))}
+
+        <div className="h-full relative overflow-y-scroll">
+          <div className="absolute w-full">
+            {DummyData.map((item, index) => (
+              <RequestCard
+                key={index}
+                name={item.name}
+                mobile={item.mobile}
+                email={item.email}
+                age={item.age}
+                date={item.date}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>
