@@ -1,8 +1,11 @@
 import UsersTable from "components/Admin/Dashboard/UsersTable";
 import Trainees from "components/Admin/Trainees/Trainees";
 import Training from "components/Admin/Training/Training";
+import FoodItem from "components/Admin/nutrition/FoodItem";
 
 import Nutrition from "components/Admin/nutrition/Nutrition";
+import NutritionalSupplements from "components/Admin/nutrition/NutritionalSupplements";
+import Vitamins from "components/Admin/nutrition/Vitamins";
 
 import AdminDashboard from "pages/Admin/AdminDashboard";
 import Login from "pages/Admin/Auth/Login";
@@ -41,6 +44,18 @@ export const router = createBrowserRouter([
       {
         path: "trainees",
         element: <Trainees />,
+      },
+      {
+        path: "food-items",
+        element: <FoodItem />,
+      },
+      {
+        path: "nutritional-supplements",
+        element: <NutritionalSupplements />,
+      },
+      {
+        path: "vitamins",
+        element: <Vitamins />,
       },
     ],
   },

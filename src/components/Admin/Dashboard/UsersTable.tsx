@@ -1,8 +1,93 @@
 import Title from "components/shared/Title";
 import RequestCard from "./RequestCard";
 import { RequestsTable } from "utils/Admin/constant";
+import { Fragment } from "react/jsx-runtime";
 
 const DummyData = [
+  {
+    name: "نائف عبدالله الديرة",
+    mobile: "0123456789",
+    email: "naifuiux@gmail.com",
+    age: "25",
+    date: "12/12/2020",
+  },
+  {
+    name: "نائف عبدالله الديرة",
+    mobile: "0123456789",
+    email: "naifuiux@gmail.com",
+    age: "25",
+    date: "12/12/2020",
+  },
+  {
+    name: "نائف عبدالله الديرة",
+    mobile: "0123456789",
+    email: "naifuiux@gmail.com",
+    age: "25",
+    date: "12/12/2020",
+  },
+  {
+    name: "نائف عبدالله الديرة",
+    mobile: "0123456789",
+    email: "naifuiux@gmail.com",
+    age: "25",
+    date: "12/12/2020",
+  },
+  {
+    name: "نائف عبدالله الديرة",
+    mobile: "0123456789",
+    email: "naifuiux@gmail.com",
+    age: "25",
+    date: "12/12/2020",
+  },
+  {
+    name: "نائف عبدالله الديرة",
+    mobile: "0123456789",
+    email: "naifuiux@gmail.com",
+    age: "25",
+    date: "12/12/2020",
+  },
+  {
+    name: "نائف عبدالله الديرة",
+    mobile: "0123456789",
+    email: "naifuiux@gmail.com",
+    age: "25",
+    date: "12/12/2020",
+  },
+  {
+    name: "نائف عبدالله الديرة",
+    mobile: "0123456789",
+    email: "naifuiux@gmail.com",
+    age: "25",
+    date: "12/12/2020",
+  },
+  {
+    name: "نائف عبدالله الديرة",
+    mobile: "0123456789",
+    email: "naifuiux@gmail.com",
+    age: "25",
+    date: "12/12/2020",
+  },
+  {
+    name: "نائف عبدالله الديرة",
+    mobile: "0123456789",
+    email: "naifuiux@gmail.com",
+    age: "25",
+    date: "12/12/2020",
+  },
+  {
+    name: "نائف عبدالله الديرة",
+    mobile: "0123456789",
+    email: "naifuiux@gmail.com",
+    age: "25",
+    date: "12/12/2020",
+  },
+  {
+    name: "نائف عبدالله الديرة",
+    mobile: "0123456789",
+    email: "naifuiux@gmail.com",
+    age: "25",
+    date: "12/12/2020",
+  },
   {
     name: "نائف عبدالله الديرة",
     mobile: "0123456789",
@@ -35,26 +120,35 @@ const DummyData = [
 
 const UsersTable = () => {
   return (
-    <>
+    <div className="flex flex-col h-full gap-11">
       <Title>قائمة طلبات التسجيل</Title>
-      <div className="flex flex-col bg-[#1a1d1f] text-[#81858d] rounded-xl h-full w-full ">
-        <div className="flex py-4 px-12 justify-between">
+      <div className="flex flex-col h-full bg-black-1000 rounded-lg ">
+        <div className="flex py-4 pr-[3.125rem] pl-[0.5rem] justify-between">
           {RequestsTable.map((item, index) => {
-            return <div key={index}>{item}</div>;
+            return (
+              <div
+                className="w-full text-black-500 font-medium text-sm"
+                key={index}
+              >
+                {item}
+              </div>
+            );
           })}
         </div>
-        {DummyData.map((item, index) => (
-          <RequestCard
-            key={index}
-            name={item.name}
-            mobile={item.mobile}
-            email={item.email}
-            age={item.age}
-            date={item.date}
-          />
-        ))}
+        <div className="h-full  overflow-y-scroll">
+          {DummyData.map((item, index) => (
+            <RequestCard
+              key={index}
+              name={item.name}
+              mobile={item.mobile}
+              email={item.email}
+              age={item.age}
+              date={item.date}
+            />
+          ))}
+        </div>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -3,21 +3,19 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
 html,
-body {
-  height: 100%;
-  font-family: "IBM Plex Sans Arabic", sans-serif;
-}
+body,
 #root {
   height: 100%;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
 }
-
-input:-webkit-autofill,
+:root {
+  --primary-red-700: #f23a3a;
+}
+/* input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
@@ -32,4 +30,36 @@ input:-webkit-autofill {
 .filter-icon {
   filter: invert(38%) sepia(78%) saturate(4819%) hue-rotate(344deg)
     brightness(101%) contrast(90%);
+} */
+/* width */
+*::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+/* Track */
+*::-webkit-scrollbar-track {
+  background: rgba(163, 158, 158, 0.265);
+  border-radius: 8px;
+}
+
+/* Handle */
+*::-webkit-scrollbar-thumb {
+  background: rgb(240, 239, 239);
+  border-radius: 8px;
+}
+.header-icon path {
+  filter: invert(38%) sepia(78%) saturate(4819%) hue-rotate(344deg)
+    brightness(101%) contrast(90%);
+  stroke: var(--primary-red-700);
+}
+.header-border {
+  box-shadow: 0 0 14.8px 0 #f23a3a, 0 0 29.5px 0 #f23a3a, 0 0 619.9px 0 #f23a3a;
+  background-color: #f23a3a;
+}
+.downArrow path {
+  color: #fb6e6e;
+  width: 24px;
+}
+.upArrow {
+  rotate: 180deg;
 }

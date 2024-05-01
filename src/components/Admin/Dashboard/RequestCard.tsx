@@ -18,14 +18,15 @@ const RequestCard = ({
   date: string;
 }) => {
   return (
-    <div className="flex items-center py-4 px-12 justify-between odd:bg-[#1a1d1f] even:bg-[#272b304d] text-[#f3f3f4] ">
-      <div className="">{name}</div>
-      <div className="">{mobile}</div>
-      <div className="">{email}</div>
-      <div className="">{age}</div>
-      <div className="">{date}</div>
-      <div className="flex items-center space-x-2">
-        <Button
+    <div className="flex items-center py-4 pr-[3.125rem] justify-between odd:bg-[#1a1d1f] even:bg-[#272b304d] text-[#f3f3f4] ">
+      <div className="w-full">{name}</div>
+      <div className="w-full">{mobile}</div>
+      <div className="w-full">{email}</div>
+      <div className="w-full">{age}</div>
+      <div className="w-full">{date}</div>
+      <div className="flex items-center w-full">
+        ss
+        {/* <Button
           color="error"
           variant="contained"
           size="small"
@@ -41,10 +42,9 @@ const RequestCard = ({
         >
           عرض
         </Button>
-
         <IconButton aria-label="delete">
           <DeleteIcon />
-        </IconButton>
+        </IconButton> */}
       </div>
     </div>
   );
