@@ -3,7 +3,9 @@ import IconButton from "@mui/material/IconButton";
 import DeleteIcon from "@mui/icons-material/Delete";
 import addIcon from "assets/icons/addIcon.svg";
 import eyeIcon from "assets/icons/eye.svg";
-
+import { ReactSVG } from "react-svg";
+import trash from "assets/icons/trash.svg";
+import Dialogt1 from "components/shared/Dialog";
 const RequestCard = ({
   name,
   mobile,
@@ -18,34 +20,73 @@ const RequestCard = ({
   date: string;
 }) => {
   return (
-    <div className="flex items-center py-4 pr-[3.125rem] justify-between odd:bg-[#1a1d1f] even:bg-[#272b304d] text-[#f3f3f4] ">
-      <div className="w-full">{name}</div>
-      <div className="w-full">{mobile}</div>
-      <div className="w-full">{email}</div>
-      <div className="w-full">{age}</div>
-      <div className="w-full">{date}</div>
-      <div className="flex items-center w-full">
-        ss
-        {/* <Button
-          color="error"
+    <div className="flex items-center w-full py-4 pr-[3.125rem] pl-[2.813rem] justify-between odd:bg-[#1a1d1f] even:bg-[#272b304d] text-[#f3f3f4] ">
+      <div className="w-fit ">{name}</div>
+      <div className="w-fit ">{mobile}</div>
+      <div className="w-fit ">{email}</div>
+      <div className="w-fit ">{age}</div>
+      <div className="w-fit ">{date}</div>
+      <div className="flex gap-4 w-fit">
+        <Button
+          onClick={() => {}}
           variant="contained"
-          size="small"
-          startIcon={<img src={addIcon} alt="plus" />}
+          sx={{
+            bgcolor: "#F23A3A",
+            fontWeight: "700",
+            color: "white",
+            borderColor: "#F23A3A",
+            gap: "0.75rem",
+            paddingX: "0.75rem",
+            paddingY: "0.375rem",
+            borderRadius: "0.75rem",
+            alignItems: "center",
+            ":hover": {
+              borderColor: "#F23A3A",
+              bgcolor: "#F23A3A",
+            },
+          }}
         >
+          <ReactSVG src={addIcon} />
           انشاء اشتراك
         </Button>
         <Button
-          color="success"
-          variant="text"
-          size="small"
-          startIcon={<img src={eyeIcon} alt="plus" />}
+          sx={{
+            bgcolor: "#333638",
+            fontWeight: "700",
+            color: "#BABBBE",
+            borderColor: "#333638",
+            gap: "0.625rem",
+            padding: "0.375rem",
+            borderRadius: "0.75rem",
+            alignItems: "center",
+            ":hover": {
+              borderColor: "#333638",
+              bgcolor: "#333638",
+            },
+          }}
         >
+          <ReactSVG src={eyeIcon} />
           عرض
         </Button>
-        <IconButton aria-label="delete">
-          <DeleteIcon />
-        </IconButton> */}
+        <Button
+          sx={{
+            bgcolor: "#333638",
+            borderColor: "#333638",
+            display: "flex",
+            padding: "0.375rem",
+            minWidth: "2rem",
+            borderRadius: "0.75rem",
+            alignItems: "center",
+            ":hover": {
+              borderColor: "#333638",
+              bgcolor: "#333638",
+            },
+          }}
+        >
+          <ReactSVG src={trash} />
+        </Button>
       </div>
+      <Dialogt1 />
     </div>
   );
 };

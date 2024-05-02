@@ -41,7 +41,11 @@ const Header = () => {
   const [menu, setmMenu] = useState(false);
   const navigate = useNavigate();
   return (
-    <div className="px-5 py-5 xl:py-0  xl:px-[4.375rem] flex justify-between items-center bg-black-1000">
+    <div
+      className={`px-5 py-5 ${
+        isAdmin() ? "xl:py-0" : "xl:py-6"
+      }  xl:px-[4.375rem] flex justify-between items-center bg-black-1000`}
+    >
       <img src={logo} alt="logo" />
       {isAdmin() && isLoggedIn() && (
         <>

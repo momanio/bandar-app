@@ -88,7 +88,7 @@ const UsersTable = () => {
     <div className="flex flex-col h-full gap-11">
       <Title>قائمة طلبات التسجيل</Title>
       <div className="flex flex-col h-full bg-black-1000 rounded-lg ">
-        <div className="flex py-4 pr-[3.125rem] pl-[0.5rem] justify-between">
+        <div className="flex py-4 pr-[3.125rem] pl-[] justify-between">
           {RequestsTable.map((item, index) => {
             return (
               <div
