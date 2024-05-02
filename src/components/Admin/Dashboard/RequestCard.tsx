@@ -1,8 +1,7 @@
 import Button from "@mui/material/Button";
-import IconButton from "@mui/material/IconButton";
-import DeleteIcon from "@mui/icons-material/Delete";
 import addIcon from "assets/icons/addIcon.svg";
-import eyeIcon from "assets/icons/eye.svg";
+import DeleteUserDialog from "./DeleteUserDialog";
+import ShowUserDialog from "./ShowUserDialog";
 
 const RequestCard = ({
   name,
@@ -25,8 +24,7 @@ const RequestCard = ({
       <div className="w-full">{age}</div>
       <div className="w-full">{date}</div>
       <div className="flex items-center w-full">
-        ss
-        {/* <Button
+        <Button
           color="error"
           variant="contained"
           size="small"
@@ -34,17 +32,8 @@ const RequestCard = ({
         >
           انشاء اشتراك
         </Button>
-        <Button
-          color="success"
-          variant="text"
-          size="small"
-          startIcon={<img src={eyeIcon} alt="plus" />}
-        >
-          عرض
-        </Button>
-        <IconButton aria-label="delete">
-          <DeleteIcon />
-        </IconButton> */}
+        <ShowUserDialog />
+        <DeleteUserDialog />
       </div>
     </div>
   );
