@@ -15,7 +15,7 @@ body,
 :root {
   --primary-red-700: #f23a3a;
 }
-/* input:-webkit-autofill,
+input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
@@ -30,8 +30,9 @@ input:-webkit-autofill {
 .filter-icon {
   filter: invert(38%) sepia(78%) saturate(4819%) hue-rotate(344deg)
     brightness(101%) contrast(90%);
-} */
-/* width */
+}
+*/
+/* width
 *::-webkit-scrollbar {
   width: 0.5rem;
 }
