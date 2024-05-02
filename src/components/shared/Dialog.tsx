@@ -17,7 +17,7 @@ const Dialogt1 = () => {
   return (
     <Dialog
       onClose={() => {}}
-      open={true}
+      open={false}
       sx={{
         bgcolor: "#333638",
         opacity: "0.5",

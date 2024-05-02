@@ -1,6 +1,7 @@
 import Button from "@mui/material/Button";
 import setting from "assets/icons/setting-2.svg";
 import trash from "assets/icons/trash.svg";
+import { useNavigate } from "react-router-dom";
 import { ReactSVG } from "react-svg";
 const TraineesCard = ({
   name,
@@ -15,6 +16,8 @@ const TraineesCard = ({
   age: string;
   date: string;
 }) => {
+  const navigate = useNavigate();
+
   return (
     <div className="flex items-center w-full py-4 pr-[3.125rem] pl-[6.438rem] justify-between odd:bg-[#1a1d1f] even:bg-[#272b304d] text-[#f3f3f4] ">
       <div className="w-fit ">{name}</div>
@@ -24,6 +27,9 @@ const TraineesCard = ({
       <div className="w-fit ">{date}</div>
       <div className="flex gap-[2.375rem] w-fit">
         <Button
+          onClick={() => {
+            navigate(`/admin/dashboard/trainee-setting/:${age}`);
+          }}
           sx={{
             bgcolor: "#333638",
             borderColor: "#333638",

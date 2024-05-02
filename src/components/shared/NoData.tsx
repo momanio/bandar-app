@@ -22,7 +22,7 @@ const NoData = ({
         <span className="text-2xl font-bold text-white">{title}</span>
         <span className="text-base font-normal text-black-400">{subTitle}</span>
       </div>
-      <Button></Button>
+
       <Button
         onClick={buttonHandler}
         variant="contained"

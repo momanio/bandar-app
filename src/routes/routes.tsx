@@ -1,8 +1,11 @@
 import UsersTable from "components/Admin/Dashboard/UsersTable";
+import ExerciseProgram from "components/Admin/Trainees/ExerciseProgram";
+import NutritionalProgram from "components/Admin/Trainees/NutritionalProgram";
+import Tracking from "components/Admin/Trainees/Tracking";
+import TraineeSetting from "components/Admin/Trainees/TraineeSetting";
 import Trainees from "components/Admin/Trainees/Trainees";
 import Training from "components/Admin/Training/Training";
 import FoodItem from "components/Admin/nutrition/FoodItem";
-
 import Nutrition from "components/Admin/nutrition/Nutrition";
 import NutritionalSupplements from "components/Admin/nutrition/NutritionalSupplements";
 import Vitamins from "components/Admin/nutrition/Vitamins";
@@ -56,6 +59,22 @@ export const router = createBrowserRouter([
       {
         path: "vitamins",
         element: <Vitamins />,
+      },
+      {
+        path: "trainee-setting/:userId",
+        element: <TraineeSetting />,
+      },
+      {
+        path: "exercise-program/:userId",
+        element: <ExerciseProgram />,
+      },
+      {
+        path: "nutritional-program/:userId",
+        element: <NutritionalProgram />,
+      },
+      {
+        path: "tracking/:userId",
+        element: <Tracking />,
       },
     ],
   },
