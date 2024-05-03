@@ -1,11 +1,6 @@
-import Button from "@mui/material/Button";
-import IconButton from "@mui/material/IconButton";
-import DeleteIcon from "@mui/icons-material/Delete";
-import addIcon from "assets/icons/addIcon.svg";
-import eyeIcon from "assets/icons/eye.svg";
-import { ReactSVG } from "react-svg";
-import trash from "assets/icons/trash.svg";
-import Dialogt1 from "components/shared/Dialog";
+import DeleteDialog from "components/shared/DeleteDialog";
+import CreateSubscDialog from "./CreateSubscDialog";
+import ShowUserDialog from "./ShowUserDialog";
 const RequestCard = ({
   name,
   mobile,
@@ -27,66 +22,14 @@ const RequestCard = ({
       <div className="w-fit ">{age}</div>
       <div className="w-fit ">{date}</div>
       <div className="flex gap-4 w-fit">
-        <Button
-          onClick={() => {}}
-          variant="contained"
-          sx={{
-            bgcolor: "#F23A3A",
-            fontWeight: "700",
-            color: "white",
-            borderColor: "#F23A3A",
-            gap: "0.75rem",
-            paddingX: "0.75rem",
-            paddingY: "0.375rem",
-            borderRadius: "0.75rem",
-            alignItems: "center",
-            ":hover": {
-              borderColor: "#F23A3A",
-              bgcolor: "#F23A3A",
-            },
-          }}
-        >
-          <ReactSVG src={addIcon} />
-          انشاء اشتراك
-        </Button>
-        <Button
-          sx={{
-            bgcolor: "#333638",
-            fontWeight: "700",
-            color: "#BABBBE",
-            borderColor: "#333638",
-            gap: "0.625rem",
-            padding: "0.375rem",
-            borderRadius: "0.75rem",
-            alignItems: "center",
-            ":hover": {
-              borderColor: "#333638",
-              bgcolor: "#333638",
-            },
-          }}
-        >
-          <ReactSVG src={eyeIcon} />
-          عرض
-        </Button>
-        <Button
-          sx={{
-            bgcolor: "#333638",
-            borderColor: "#333638",
-            display: "flex",
-            padding: "0.375rem",
-            minWidth: "2rem",
-            borderRadius: "0.75rem",
-            alignItems: "center",
-            ":hover": {
-              borderColor: "#333638",
-              bgcolor: "#333638",
-            },
-          }}
-        >
-          <ReactSVG src={trash} />
-        </Button>
+        <CreateSubscDialog />
+        <ShowUserDialog />
+
+        <DeleteDialog
+          title="حذف طلب التسجيل"
+          subTitle="عند حذفك لهذا الطلب لن تتمكن من استرجاعه"
+        />
       </div>
-      <Dialogt1 />
     </div>
   );
 };

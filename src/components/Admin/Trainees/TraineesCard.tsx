@@ -1,6 +1,7 @@
 import Button from "@mui/material/Button";
 import setting from "assets/icons/setting-2.svg";
 import trash from "assets/icons/trash.svg";
+import DeleteDialog from "components/shared/DeleteDialog";
 import { useNavigate } from "react-router-dom";
 import { ReactSVG } from "react-svg";
 const TraineesCard = ({
@@ -46,23 +47,10 @@ const TraineesCard = ({
         >
           <ReactSVG src={setting} />
         </Button>
-        <Button
-          sx={{
-            bgcolor: "#333638",
-            borderColor: "#333638",
-            display: "flex",
-            padding: "0.375rem",
-            minWidth: "2rem",
-            borderRadius: "0.75rem",
-            alignItems: "center",
-            ":hover": {
-              borderColor: "#333638",
-              bgcolor: "#333638",
-            },
-          }}
-        >
-          <ReactSVG src={trash} />
-        </Button>
+        <DeleteDialog
+          title="حذف طلب التسجيل"
+          subTitle="عند حذفك لهذا المتدرب لن يتمكن من تسجيل الدخول مرة أخرى وسيتم حذف جميع بياناته"
+        />
       </div>
     </div>
   );
