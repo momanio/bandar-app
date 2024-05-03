@@ -31,8 +31,7 @@ input:-webkit-autofill {
   filter: invert(38%) sepia(78%) saturate(4819%) hue-rotate(344deg)
     brightness(101%) contrast(90%);
 }
-*/
-/* width
+
 *::-webkit-scrollbar {
   width: 0.5rem;
 }
