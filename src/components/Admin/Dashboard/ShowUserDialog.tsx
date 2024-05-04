@@ -47,6 +47,7 @@ const ShowUserDialog = () => {
             borderRadius: "22px",
             backgroundColor: "#111315",
             width: "50rem",
+            height: "53rem",
           },
         }}
         onClose={handleClose}

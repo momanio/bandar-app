@@ -4,7 +4,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import { ReactSVG } from "react-svg";
 import addIcon from "assets/icons/addIcon.svg";
 import RectangleIcon from "assets/icons/Rectangle201.svg";
-
+import Radio from "@mui/material/Radio";
 const ChildModal = () => {
   const [open, setOpen] = useState(false);
   const handleOpen = () => {
@@ -144,6 +144,12 @@ const CreateSubscDialog = () => {
     setOpen(false);
   };
 
+  const [selectedValue, setSelectedValue] = useState("a");
+
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setSelectedValue(event.target.value);
+  };
+
   return (
     <div>
       <Button
@@ -201,21 +207,53 @@ const CreateSubscDialog = () => {
             </span>
           </div>
           <div className="flex flex-col gap-3">
-            <span className="text-right font-normal text-black-300">
+            <span className="text-right font-normal text-white">
               اختار مدة الاشتراك
             </span>
             <div className="flex gap-6">
               <div className="flex flex-col w-full gap-2">
                 <div className="overflow-y-auto h-[7.5rem] py-3 px-5 bg-black-1000 rounded-2xl">
-                  <span className="text-base font-normal text-black-300">
-                    لا
+                  <span className="text-right font-normal text-white">
+                    اشتراك شهر
                   </span>
+                  <Radio
+                    color="error"
+                    checked={selectedValue === "a"}
+                    onChange={handleChange}
+                    value="a"
+                    name="radio-buttons"
+                    inputProps={{ "aria-label": "A" }}
+                  />
                 </div>
               </div>
               <div className="flex flex-col w-full gap-2">
                 <div className="overflow-y-auto h-[7.5rem] py-3 px-5 bg-black-1000 rounded-2xl ">
-                  <span className="text-base font-normal text-black-300">
-                    fvdsfv
+                  <span className="text-right font-normal text-white">
+                    اشتراك 3 اشهر
+                  </span>
+                  <Radio
+                    color="error"
+                    checked={selectedValue === "b"}
+                    onChange={handleChange}
+                    value="b"
+                    name="radio-buttons"
+                    inputProps={{ "aria-label": "B" }}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col gap-3 text-right">
+            <span className="text-right font-normal text-white">
+              البريد الالكتروني
+            </span>
+            <div className="flex gap-6">
+              <div className="flex flex-col w-full gap-2">
+                <div className="overflow-y-auto h-14 py-3 px-5 bg-black-1000 rounded-2xl">
+                  <span className="font-normal text-black-300">
+                    {" "}
+                    أدخل بريد المتدرب، ستصله بيانات تسجيل الدخول بعد الدفع.
                   </span>
                 </div>
               </div>
