@@ -1,6 +1,5 @@
 import Button from "@mui/material/Button";
 import setting from "assets/icons/setting-2.svg";
-import trash from "assets/icons/trash.svg";
 import DeleteDialog from "components/shared/DeleteDialog";
 import { useNavigate } from "react-router-dom";
 import { ReactSVG } from "react-svg";

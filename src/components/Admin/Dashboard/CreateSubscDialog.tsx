@@ -62,7 +62,7 @@ const ChildModal = () => {
           >
             <CloseIcon />
           </IconButton>
-          <div className="flex flex-col gap-8 p-8 w-[35rem] bg-[#111315]  item-center justify-center">
+          <div className="flex flex-col gap-8 p-8 w-[37rem] bg-[#111315]  item-center justify-center">
             <div className="flex flex-col items-center gap-4 w-full text-white">
               <span className="w-[407px] h-[39px] flex-grow-0 font-bold text-center text-white text-2xl leading-6">
                 تم انشاء اشتراك
@@ -161,7 +161,7 @@ const CreateSubscDialog = () => {
           >
             <CloseIcon />
           </IconButton>
-          <div className="flex flex-col gap-8 p-8 w-[35rem] item-center justify-center bg-[#111315]  ">
+          <div className="flex flex-col gap-8 p-8 w-[37rem] item-center justify-center bg-[#111315]  ">
             <div className="flex flex-col items-center gap-4 w-full text-white">
               <span className="w-[407px] h-[39px] flex-grow-0 font-bold text-center text-white text-2xl leading-6">
                 fvdfvbdf
