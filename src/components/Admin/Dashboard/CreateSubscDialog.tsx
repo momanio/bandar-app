@@ -3,6 +3,7 @@ import { Button, Dialog, IconButton } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import { ReactSVG } from "react-svg";
 import addIcon from "assets/icons/addIcon.svg";
+import emailIcon from "assets/icons/email.svg";
 import RectangleIcon from "assets/icons/Rectangle201.svg";
 import Radio from "@mui/material/Radio";
 const ChildModal = () => {
@@ -249,11 +250,11 @@ const CreateSubscDialog = () => {
             <span className="text-right font-normal text-white">
               البريد الالكتروني
             </span>
-            <div className="flex gap-6">
-              <div className="flex flex-col w-full gap-2">
-                <div className="overflow-y-auto h-14 py-3 px-5 bg-black-1000 rounded-2xl">
+            <div className="flex pb-10 gap-6">
+              <div className="justify-between w-full gap-2">
+                <div className="flex h-14 py-3 px-5 bg-black-1000 rounded-2xl">
+                  <ReactSVG src={emailIcon} />
                   <span className="font-normal text-black-300">
-                    {" "}
                     أدخل بريد المتدرب، ستصله بيانات تسجيل الدخول بعد الدفع.
                   </span>
                 </div>

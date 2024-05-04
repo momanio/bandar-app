@@ -185,26 +185,14 @@ const ShowUserDialog = () => {
                   src="https://s3-alpha-sig.figma.com/img/98d5/9ae4/d967250f455dc3ee13ec824045d20170?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=PTjIeh3tacG5YjME5ktwfO3tdeO~iU1yUWvLLA4FgErriApGjoyiR1Bz94MC984xrCDjAv7RmnzaZYIrx8qjnprWeVtZBFHN9xs2fjPrLDauoF-3sYO84oGnmc6sWlYxcc1shVBBShP0JOYzW~cbvV40lWQRj7v7FzC2Diim1DoK7jCi4a5RVph58KJUNADhJ5p3VnKddW670siFf5tM4YccGXnXQYiSPdjYgAXibN1ngRaQ1VOLyKGt53K13zMVD2b1iOduv3t2q-WSWuD9X5QtQ~3l20Jo68QIXYimxGJbljKctfRGaEATc6Ekxy1gu8semoO2RFNRQ2BneNn9cQ"
                   alt="image1"
                 />
-
-                <span className="text-base font-bold text-white">الامام</span>
               </div>
-              <div className="flex flex-col gap-2.5 w-full items-center">
-                <img
-                  className="h-[11.563rem] w-full object-fill  rounded-2xl"
-                  src="https://s3-alpha-sig.figma.com/img/98d5/9ae4/d967250f455dc3ee13ec824045d20170?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=PTjIeh3tacG5YjME5ktwfO3tdeO~iU1yUWvLLA4FgErriApGjoyiR1Bz94MC984xrCDjAv7RmnzaZYIrx8qjnprWeVtZBFHN9xs2fjPrLDauoF-3sYO84oGnmc6sWlYxcc1shVBBShP0JOYzW~cbvV40lWQRj7v7FzC2Diim1DoK7jCi4a5RVph58KJUNADhJ5p3VnKddW670siFf5tM4YccGXnXQYiSPdjYgAXibN1ngRaQ1VOLyKGt53K13zMVD2b1iOduv3t2q-WSWuD9X5QtQ~3l20Jo68QIXYimxGJbljKctfRGaEATc6Ekxy1gu8semoO2RFNRQ2BneNn9cQ__"
-                  alt="image2"
-                />
 
-                <span className="text-base font-bold text-white">الامام</span>
-              </div>
               <div className="flex flex-col gap-2.5 w-full items-center">
                 <img
                   className="h-[11.563rem] w-full object-fill rounded-2xl "
                   src="https://s3-alpha-sig.figma.com/img/98d5/9ae4/d967250f455dc3ee13ec824045d20170?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=PTjIeh3tacG5YjME5ktwfO3tdeO~iU1yUWvLLA4FgErriApGjoyiR1Bz94MC984xrCDjAv7RmnzaZYIrx8qjnprWeVtZBFHN9xs2fjPrLDauoF-3sYO84oGnmc6sWlYxcc1shVBBShP0JOYzW~cbvV40lWQRj7v7FzC2Diim1DoK7jCi4a5RVph58KJUNADhJ5p3VnKddW670siFf5tM4YccGXnXQYiSPdjYgAXibN1ngRaQ1VOLyKGt53K13zMVD2b1iOduv3t2q-WSWuD9X5QtQ~3l20Jo68QIXYimxGJbljKctfRGaEATc6Ekxy1gu8semoO2RFNRQ2BneNn9cQ__"
                   alt="image3"
                 />
-
-                <span className="text-base font-bold text-white">الامام</span>
               </div>
               <div className="flex flex-col gap-2.5 w-full items-center">
                 <img
@@ -212,8 +200,6 @@ const ShowUserDialog = () => {
                   src="https://s3-alpha-sig.figma.com/img/98d5/9ae4/d967250f455dc3ee13ec824045d20170?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=PTjIeh3tacG5YjME5ktwfO3tdeO~iU1yUWvLLA4FgErriApGjoyiR1Bz94MC984xrCDjAv7RmnzaZYIrx8qjnprWeVtZBFHN9xs2fjPrLDauoF-3sYO84oGnmc6sWlYxcc1shVBBShP0JOYzW~cbvV40lWQRj7v7FzC2Diim1DoK7jCi4a5RVph58KJUNADhJ5p3VnKddW670siFf5tM4YccGXnXQYiSPdjYgAXibN1ngRaQ1VOLyKGt53K13zMVD2b1iOduv3t2q-WSWuD9X5QtQ~3l20Jo68QIXYimxGJbljKctfRGaEATc6Ekxy1gu8semoO2RFNRQ2BneNn9cQ__"
                   alt="image4"
                 />
-
-                <span className="text-base font-bold text-white">الامام</span>
               </div>
               <div className="flex flex-col gap-2.5 w-full items-center">
                 <img
@@ -221,8 +207,6 @@ const ShowUserDialog = () => {
                   src="https://s3-alpha-sig.figma.com/img/98d5/9ae4/d967250f455dc3ee13ec824045d20170?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=PTjIeh3tacG5YjME5ktwfO3tdeO~iU1yUWvLLA4FgErriApGjoyiR1Bz94MC984xrCDjAv7RmnzaZYIrx8qjnprWeVtZBFHN9xs2fjPrLDauoF-3sYO84oGnmc6sWlYxcc1shVBBShP0JOYzW~cbvV40lWQRj7v7FzC2Diim1DoK7jCi4a5RVph58KJUNADhJ5p3VnKddW670siFf5tM4YccGXnXQYiSPdjYgAXibN1ngRaQ1VOLyKGt53K13zMVD2b1iOduv3t2q-WSWuD9X5QtQ~3l20Jo68QIXYimxGJbljKctfRGaEATc6Ekxy1gu8semoO2RFNRQ2BneNn9cQ__"
                   alt="image5"
                 />
-
-                <span className="text-base font-bold text-white">الامام</span>
               </div>
             </div>
           </div>
