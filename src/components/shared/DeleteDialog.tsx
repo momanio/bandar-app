@@ -46,6 +46,8 @@ const DeleteDialog = ({
           "& .MuiPaper-root": {
             borderRadius: "22px",
             backgroundColor: "#111315",
+            width: "90vw",
+            maxWidth: "30.75rem",
           },
         }}
         onClose={handleClose}
@@ -66,21 +68,27 @@ const DeleteDialog = ({
           >
             <CloseIcon />
           </IconButton>
-          <div className="flex flex-col gap-8 p-9 w-[30.75rem] bg-[#111315]  item-center justify-center">
+          <div className="flex flex-col gap-8 p-9 w-full bg-[#111315] item-center justify-center">
             <div className="flex flex-col items-center justify-center w-full">
               <ReactSVG src={warningIcon} />
             </div>
             <div className="flex flex-col items-center gap-4 w-full text-white">
-              <span className="w-[25rem] h-10 flex-grow-0 font-bold text-center text-white text-2xl leading-6">
+              <span
+                className="flex-grow-0 font-bold text-center text-white text-2xl leading-6"
+                style={{ width: "80%", maxWidth: "25rem" }}
+              >
                 {title}
               </span>
-              <span className="w-[25rem] h-10 flex-grow-0 text-center text-[#9ea0a5] text-lg leading-6">
+              <span
+                className="flex-grow-0 text-center text-[#9ea0a5] text-lg leading-6"
+                style={{ width: "80%", maxWidth: "25rem" }}
+              >
                 {subTitle}
               </span>
             </div>
             <div className="flex gap-3 w-full text-white">
               <Button
-                className="w-96"
+                className="w-full md:w-96"
                 variant="contained"
                 color="error"
                 sx={{
@@ -93,7 +101,7 @@ const DeleteDialog = ({
               </Button>
               <Button
                 onClick={handleClose}
-                className="w-96"
+                className="w-full md:w-96"
                 variant="outlined"
                 sx={{
                   borderRadius: "16px",

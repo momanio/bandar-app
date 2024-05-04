@@ -181,6 +181,7 @@ const CreateSubscDialog = () => {
           "& .MuiPaper-root": {
             borderRadius: "22px",
             backgroundColor: "#111315",
+            width: { xs: "90%", sm: "80%", md: "37rem" },
           },
         }}
         onClose={handleClose}
