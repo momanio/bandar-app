@@ -1,18 +1,5 @@
-import {
-  Avatar,
-  Button,
-  Dialog,
-  DialogTitle,
-  IconButton,
-  List,
-  ListItem,
-  ListItemAvatar,
-  ListItemButton,
-  ListItemText,
-} from "@mui/material";
-import { blue } from "@mui/material/colors";
-import React from "react";
 import CloseIcon from "@mui/icons-material/Close";
+import { Button, Dialog, IconButton } from "@mui/material";
 const Dialogt1 = () => {
   return (
     <Dialog
