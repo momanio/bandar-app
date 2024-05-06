@@ -22,13 +22,11 @@ const CreateSubscDialog = ({
 
   return (
     <Dialog
-      scroll="body"
-      maxWidth="sm"
-      sx={{
-        "& .MuiPaper-root": {
-          borderRadius: "22px",
-          backgroundColor: "#111315",
-          width: { xs: "90%", sm: "80%", md: "37rem" },
+      PaperProps={{
+        style: {
+          backgroundColor: "unset",
+          margin: "0",
+          width: "42.688rem",
         },
       }}
       onClose={handleClose}

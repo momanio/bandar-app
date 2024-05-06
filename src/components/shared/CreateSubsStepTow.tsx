@@ -13,10 +13,11 @@ const CreateSubsStepTow = ({
 }) => {
   return (
     <Dialog
-      sx={{
-        "& .MuiPaper-root": {
-          borderRadius: "22px",
-          backgroundColor: "#111315",
+      PaperProps={{
+        style: {
+          backgroundColor: "unset",
+          margin: "0",
+          width: "42.688rem",
         },
       }}
       onClose={handleClose}

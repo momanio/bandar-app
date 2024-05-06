@@ -42,12 +42,11 @@ const DeleteDialog = ({
         <ReactSVG src={trashIcon} />
       </Button>
       <Dialog
-        sx={{
-          "& .MuiPaper-root": {
-            borderRadius: "22px",
-            backgroundColor: "#111315",
-            width: "90vw",
-            maxWidth: "30.75rem",
+        PaperProps={{
+          style: {
+            backgroundColor: "unset",
+            margin: "0",
+            width: "42.688rem",
           },
         }}
         onClose={handleClose}
