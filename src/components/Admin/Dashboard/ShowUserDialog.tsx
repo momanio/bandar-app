@@ -31,9 +31,10 @@ const ShowUserDialog = ({
         onClick={handleClose}
         sx={{
           position: "absolute",
-          left: 8,
+          left: 155,
           top: 8,
           color: (theme) => theme.palette.grey[500],
+          zIndex: 100,
         }}
       >
         <CloseIcon />
