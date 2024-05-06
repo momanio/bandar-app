@@ -46,9 +46,9 @@ const CreateSubscDialog = ({
       >
         <CloseIcon />
       </IconButton>
-      <div className="gap-8 px-10 py-10   bg-[#111315]  item-center justify-center">
+      <div className="flex flex-col gap-4 px-10 py-10   bg-[#111315]">
         <div className="flex flex-col items-center gap-4 w-full text-white">
-          <span className="w-[25rem] h-10 flex-grow-0 font-bold text-center text-white text-2xl leading-6">
+          <span className="w-[25rem]   font-bold text-center text-white text-2xl ">
             انشاء اشتراك
           </span>
         </div>
@@ -57,35 +57,41 @@ const CreateSubscDialog = ({
             اختار مدة الاشتراك
           </span>
           <div className="flex gap-6">
-            <div className="flex flex-col w-full gap-2">
-              <div className="overflow-y-auto h-[7.5rem] py-3 px-5 bg-black-1000 rounded-2xl">
-                <span className="text-right font-normal text-white">
-                  اشتراك شهر
-                </span>
-                <Radio
-                  color="error"
-                  checked={selectedValue === "a"}
-                  onChange={handleChange}
-                  value="a"
-                  name="radio-buttons"
-                  inputProps={{ "aria-label": "A" }}
-                />
-              </div>
-            </div>
-            <div className="flex flex-col w-full gap-2">
-              <div className="overflow-y-auto h-[7.5rem] py-3 px-5 bg-black-1000 rounded-2xl ">
+            <div className="flex w-full  py-3 px-[1.219rem] justify-between  bg-black-1000 rounded-2xl">
+              <div className="flex flex-col items-start">
                 <span className="text-right font-normal text-white">
                   اشتراك 3 اشهر
                 </span>
-                <Radio
-                  color="error"
-                  checked={selectedValue === "b"}
-                  onChange={handleChange}
-                  value="b"
-                  name="radio-buttons"
-                  inputProps={{ "aria-label": "B" }}
-                />
+                <span className="text-right font-normal text-white">
+                  اشتراك 3 اشهر
+                </span>
               </div>
+              <Radio
+                color="error"
+                checked={selectedValue === "b"}
+                onChange={handleChange}
+                value="b"
+                name="radio-buttons"
+                inputProps={{ "aria-label": "B" }}
+              />
+            </div>
+            <div className="flex w-full  py-3 px-[1.219rem] justify-between bg-black-1000 rounded-2xl">
+              <div className="flex flex-col items-start">
+                <span className="text-right font-normal text-white">
+                  اشتراك 3 اشهر
+                </span>
+                <span className="text-right font-normal text-white">
+                  اشتراك 3 اشهر
+                </span>
+              </div>
+              <Radio
+                color="error"
+                checked={selectedValue === "b"}
+                onChange={handleChange}
+                value="b"
+                name="radio-buttons"
+                inputProps={{ "aria-label": "B" }}
+              />
             </div>
           </div>
         </div>
