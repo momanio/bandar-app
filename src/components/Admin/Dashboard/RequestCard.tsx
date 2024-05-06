@@ -1,6 +1,5 @@
 import Button from "@mui/material/Button";
-import IconButton from "@mui/material/IconButton";
-import DeleteIcon from "@mui/icons-material/Delete";
+
 import addIcon from "assets/icons/addIcon.svg";
 import eyeIcon from "assets/icons/eye.svg";
 import { ReactSVG } from "react-svg";

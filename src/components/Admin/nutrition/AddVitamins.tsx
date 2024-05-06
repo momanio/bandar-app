@@ -22,7 +22,48 @@ const AddVitamins = ({
         setActiveIndex(activeIndex + 1);
       }}
     />,
-    <div>second model</div>,
+    <div className="flex flex-col gap-8 w-full">
+      <span className="font-bold text-2xl text-black-400">
+        معلومات عن فيتامين
+      </span>
+      <div className="flex flex-col gap-2 w-full">
+        <span className="font-medium text-base text-white">فئة الفيتامين</span>
+        select1
+      </div>
+      <div className="fle flex-col gap-2">
+        <span className="font-medium text-base text-white">وحدة القياس</span>
+        <div className="flex gap-[1.125rem]">
+          <div className="w-full border border-[#212426] rounded-3xl px-5 py-7 flex flex-col gap-3 items-start">
+            <div className="flex gap-2 justify-start">
+              <span className="font-medium text-base  text-black-400">حبة</span>
+            </div>
+          </div>
+          <div className="w-full border border-[#212426] rounded-3xl px-5 py-7 flex flex-col gap-3 items-start">
+            <div className="flex gap-2 ">
+              <span className="font-medium text-base  text-black-400">
+                جرام
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <Button
+        onClick={() => {}}
+        sx={{
+          width: "100%",
+          bgcolor: "#F23A3A",
+          borderRadius: "1rem",
+          paddingY: "0.906rem",
+          color: "#FFFFFF",
+          ":hover": {
+            bgcolor: "#F23A3A",
+          },
+        }}
+      >
+        انشاء
+      </Button>
+    </div>,
   ];
   return (
     <Dialog

@@ -7,9 +7,7 @@ const Vitamins = () => {
   const [showAddVitamins, setShowAddVitamins] = useState<boolean>(false);
   return (
     <div className="flex gap-11 flex-col h-full">
-      <Title previousURL={"/admin/dashboard/nutrition"}>
-        المكملات الغذائية
-      </Title>
+      <Title previousURL={"/admin/dashboard/nutrition"}>فيتامينات</Title>
       <NoData
         title="لم تتم إضافة أي فيتامينات"
         subTitle="انقر على الزر أدنى لإضافة أول فيتامين"

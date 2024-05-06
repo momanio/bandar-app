@@ -7,9 +7,7 @@ const FoodItem = () => {
   const [showAddFood, setShowAddFood] = useState<boolean>(false);
   return (
     <div className="flex gap-11 flex-col h-full">
-      <Title previousURL={"/admin/dashboard/nutrition"}>
-        المكملات الغذائية
-      </Title>
+      <Title previousURL={"/admin/dashboard/nutrition"}>الأصناف الغذائية</Title>
       <NoData
         title="لم تتم إضافة أي صنف غذائي"
         subTitle="انقر على الزر أدنى لإضافة أول صنف غذائي"
