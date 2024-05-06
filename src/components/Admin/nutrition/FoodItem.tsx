@@ -2,8 +2,8 @@ import NoData from "components/shared/NoData";
 import Title from "components/shared/Title";
 import AddFood from "./AddFood";
 import { useState } from "react";
-import FoodCard from "./FoodCard";
 import ItemHolder from "components/shared/ItemHolder";
+import NutritionCardItem from "../../shared/NutritionCardItem";
 
 const FoodItem = () => {
   const [showAddFood, setShowAddFood] = useState<boolean>(false);
@@ -19,9 +19,11 @@ const FoodItem = () => {
         }}
       /> */}
       <ItemHolder>
-        <FoodCard />
-        <FoodCard /> <FoodCard /> <FoodCard /> <FoodCard /> <FoodCard />
-        <FoodCard /> <FoodCard /> <FoodCard /> <FoodCard />
+        <NutritionCardItem isFood={true} />
+        <NutritionCardItem isFood={true} />
+        <NutritionCardItem isFood={true} />
+        <NutritionCardItem isFood={true} />
+        <NutritionCardItem isFood={true} />
       </ItemHolder>
 
       <AddFood
