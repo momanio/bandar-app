@@ -1,15 +1,10 @@
 import React, { useState } from "react";
 import { ReactSVG } from "react-svg";
 import uploadImage from "assets/icons/uploadImage.svg";
-import {
-  Button,
-  IconButton,
-  InputAdornment,
-  TextField,
-  styled,
-} from "@mui/material";
+import { Button, IconButton, styled } from "@mui/material";
 import addCircle from "assets/icons/add-circle.svg";
 import CloseIcon from "@mui/icons-material/Close";
+import InputText from "./InputText";
 
 const VisuallyHiddenInput = styled("input")({
   clip: "rect(0 0 0 0)",
@@ -103,21 +98,12 @@ const AddNutrition = ({
       )}
       <div className="flex flex-col gap-3 w-full">
         <span className="text-base font-medium text-white">{label}</span>
-        <TextField
-          sx={{
-            input: { color: "#9EA0A5", paddingLeft: 5 },
-          }}
-          InputLabelProps={{
-            style: { fontWeight: "400", marginRight: 30 },
-          }}
-          InputProps={{
-            endAdornment: (
-              <InputAdornment position="start">{icon}</InputAdornment>
-            ),
-          }}
-          className="bg-black-950 rounded-[20px]"
-          label={placeHolder}
-          variant="outlined"
+        <InputText
+          onChange={() => {}}
+          type="text"
+          value={"dd"}
+          placeHolder={placeHolder}
+          icon={icon}
         />
       </div>
       <Button

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import CloseIcon from "@mui/icons-material/Close";
-import { Button, Dialog, IconButton } from "@mui/material";
+import { Button, Dialog, IconButton, Radio } from "@mui/material";
 import AddNutrition from "components/shared/AddNutrition";
 import pill from "assets/icons/pill.svg";
 import { ReactSVG } from "react-svg";
@@ -30,16 +30,34 @@ const AddVitamins = ({
         <span className="font-medium text-base text-white">فئة الفيتامين</span>
         select1
       </div>
-      <div className="fle flex-col gap-2">
+      <div className="flex flex-col gap-2">
         <span className="font-medium text-base text-white">وحدة القياس</span>
         <div className="flex gap-[1.125rem]">
           <div className="w-full border border-[#212426] rounded-3xl px-5 py-7 flex flex-col gap-3 items-start">
-            <div className="flex gap-2 justify-start">
+            <div className="flex gap-2 items-center">
+              <Radio
+                color="error"
+                checked={true}
+                value="b"
+                style={{
+                  width: "1.5rem",
+                  height: "1.5rem",
+                }}
+              />
               <span className="font-medium text-base  text-black-400">حبة</span>
             </div>
           </div>
           <div className="w-full border border-[#212426] rounded-3xl px-5 py-7 flex flex-col gap-3 items-start">
-            <div className="flex gap-2 ">
+            <div className="flex gap-2 items-center">
+              <Radio
+                color="error"
+                checked={true}
+                value="b"
+                style={{
+                  width: "1.5rem",
+                  height: "1.5rem",
+                }}
+              />
               <span className="font-medium text-base  text-black-400">
                 جرام
               </span>
