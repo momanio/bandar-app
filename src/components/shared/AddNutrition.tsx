@@ -23,11 +23,15 @@ const AddNutrition = ({
   placeHolder,
   label,
   icon,
+  itemType,
+  supportType = false,
 }: {
   nextActive: () => void;
   placeHolder: string;
   label: string;
   icon: React.ReactNode;
+  itemType: string;
+  supportType?: boolean;
 }) => {
   const [image, setImage] = useState<string | undefined>(undefined);
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -66,10 +70,19 @@ const AddNutrition = ({
       ) : (
         <div className="bg-[#212426] rounded-2xl h-[26.438rem] w-[26.438rem] flex flex-col items-center py-10 px-[5.313rem]">
           <ReactSVG src={uploadImage} />
-          <span className="text-sm font-bold text-white">صورة الصنف</span>
-          <span className="text-sm font-normal text-black-500 text-center pt-3 pb-8">
+          <span className="text-sm font-bold text-white">{itemType}</span>
+          <span
+            className={`text-sm font-normal text-black-500 text-center pt-3 ${
+              supportType ? "pb-4" : "pb-8"
+            }`}
+          >
             يجب أن يكون حجم الصورة أقل من 2 ميجابايت ويجب أن تكون أبعادها مربعة
           </span>
+          {supportType && (
+            <span className="text-sm font-normal text-black-300 text-center pb-4">
+              الصيغ المدعومة: gif,png,jpg
+            </span>
+          )}
           <Button
             component="label"
             variant="contained"
@@ -103,7 +116,9 @@ const AddNutrition = ({
           type="text"
           value={"dd"}
           placeHolder={placeHolder}
-          icon={icon}
+          icon={
+            <div className="flex items-center justify-center ps-3">{icon}</div>
+          }
         />
       </div>
       <Button

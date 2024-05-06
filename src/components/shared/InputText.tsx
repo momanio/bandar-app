@@ -16,7 +16,7 @@ const InputText = ({
   const [isFocus, setIsFocus] = useState<boolean>(false);
   return (
     <div
-      className={`py-4 px-3 flex gap-4 bg-black-950 rounded-[1.25rem] border-white ${
+      className={` pl-3 flex gap-4  bg-black-950 rounded-[1.25rem] border-white ${
         isFocus && "border"
       }`}
     >
@@ -28,6 +28,8 @@ const InputText = ({
         // value={value}
         type={type}
         style={{
+          marginTop: "1rem",
+          marginBottom: "1rem",
           width: "100%",
           background: "unset",
           border: "none",

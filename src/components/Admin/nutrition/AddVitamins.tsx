@@ -15,6 +15,7 @@ const AddVitamins = ({
   const [activeIndex, setActiveIndex] = useState<number>(0);
   const model = [
     <AddNutrition
+      itemType="صورة الفيتامين"
       label="اسم الفيتامين"
       placeHolder="أدخل اسم الفيتامين"
       icon={<ReactSVG src={pill} />}

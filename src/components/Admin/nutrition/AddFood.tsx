@@ -17,6 +17,7 @@ const AddFood = ({
   const [activeIndex, setActiveIndex] = useState<number>(0);
   const model = [
     <AddNutrition
+      itemType="صورة الصنف"
       label="اسم الصنف الغذائي"
       placeHolder="أدخل اسم الصنف"
       icon={<ReactSVG src={redSalad} />}
