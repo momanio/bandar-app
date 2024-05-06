@@ -18,6 +18,7 @@ const CreateSubsStepTow = ({
           backgroundColor: "unset",
           margin: "0",
           width: "42.688rem",
+          borderRadius: "1.375rem",
         },
       }}
       onClose={handleClose}
@@ -80,9 +81,17 @@ const CreateSubsStepTow = ({
               variant="contained"
               color="error"
               sx={{
-                borderRadius: "16px",
-                fontWeight: "bold",
+                width: "100%",
+                bgcolor: "#F23A3A",
+                fontWeight: "700",
                 color: "white",
+                borderColor: "#F23A3A",
+                paddingY: "1rem",
+                borderRadius: "0.75rem",
+                ":hover": {
+                  borderColor: "#F23A3A",
+                  bgcolor: "#F23A3A",
+                },
               }}
             >
               ارسال بيانات الدخول لـ نائف عبدالله الديرة
@@ -92,10 +101,15 @@ const CreateSubsStepTow = ({
               className="w-1/4"
               variant="outlined"
               sx={{
-                borderRadius: "16px",
+                borderRadius: "1rem",
                 borderColor: "#50535b",
                 fontWeight: "bold",
+                paddingY: "1rem",
                 color: "white",
+                ":hover": {
+                  borderColor: "#50535b",
+                  bgcolor: "#50535b",
+                },
               }}
             >
               إلغاء

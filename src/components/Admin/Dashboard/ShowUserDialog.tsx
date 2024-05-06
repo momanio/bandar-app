@@ -1,8 +1,7 @@
 import CloseIcon from "@mui/icons-material/Close";
-import { Button, Dialog, IconButton } from "@mui/material";
+import { Dialog, IconButton } from "@mui/material";
 
 import UserSetting from "components/shared/UserSetting";
-import { useState } from "react";
 
 const ShowUserDialog = ({
   open,

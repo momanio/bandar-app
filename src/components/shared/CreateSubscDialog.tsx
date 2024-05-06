@@ -27,6 +27,7 @@ const CreateSubscDialog = ({
           backgroundColor: "unset",
           margin: "0",
           width: "42.688rem",
+          borderRadius: "1.375rem",
         },
       }}
       onClose={handleClose}
@@ -60,15 +61,15 @@ const CreateSubscDialog = ({
                 <span className="text-right font-normal text-white">
                   اشتراك 3 اشهر
                 </span>
-                <span className="text-right font-normal text-white">
-                  اشتراك 3 اشهر
+                <span className="text-right font-normal text-[#9ea0a5]">
+                  800 ر.س
                 </span>
               </div>
               <Radio
                 color="error"
-                checked={selectedValue === "b"}
+                checked={selectedValue === "800"}
                 onChange={handleChange}
-                value="b"
+                value="800"
                 name="radio-buttons"
                 inputProps={{ "aria-label": "B" }}
               />
@@ -78,15 +79,15 @@ const CreateSubscDialog = ({
                 <span className="text-right font-normal text-white">
                   اشتراك 3 اشهر
                 </span>
-                <span className="text-right font-normal text-white">
-                  اشتراك 3 اشهر
+                <span className="text-right font-normal text-[#9ea0a5]">
+                  2300 ر.س
                 </span>
               </div>
               <Radio
                 color="error"
-                checked={selectedValue === "b"}
+                checked={selectedValue === "2300"}
                 onChange={handleChange}
-                value="b"
+                value="2300"
                 name="radio-buttons"
                 inputProps={{ "aria-label": "B" }}
               />
@@ -98,12 +99,17 @@ const CreateSubscDialog = ({
           <span className="text-right font-normal text-white">
             البريد الالكتروني
           </span>
-          <div className="flex pb-10 gap-6">
-            <div className="justify-between w-full gap-2">
+          <div className="flex  gap-6">
+            <div className="justify-between w-full">
               <div className="flex h-14 py-3 px-5 bg-black-1000 rounded-2xl">
                 <ReactSVG src={emailIcon} />
                 <span className="font-normal text-black-300">
                   أدخل بريد المتدرب، ستصله بيانات تسجيل الدخول بعد الدفع.
+                </span>
+              </div>
+              <div className="flex  py-3 px-5">
+                <span className="font-bold text-[#fb6e6e]">
+                  استخدام naif.a@gmail.com
                 </span>
               </div>
             </div>
@@ -119,10 +125,8 @@ const CreateSubscDialog = ({
               fontWeight: "700",
               color: "white",
               borderColor: "#F23A3A",
-
               paddingY: "1rem",
               borderRadius: "0.75rem",
-
               ":hover": {
                 borderColor: "#F23A3A",
                 bgcolor: "#F23A3A",
