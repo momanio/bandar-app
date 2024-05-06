@@ -6,11 +6,9 @@ import RectangleIcon from "assets/icons/Rectangle201.svg";
 
 const CreateSubsStepTow = ({
   open,
-  openStepTow,
   handleClose,
 }: {
   open: boolean;
-  openStepTow: () => void;
   handleClose: () => void;
 }) => {
   return (

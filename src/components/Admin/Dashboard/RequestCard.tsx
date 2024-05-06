@@ -36,16 +36,16 @@ const RequestCard = ({
             setOpen(!open);
           }}
           open={open}
+          openStepTow={() => {
+            setOpen(!open);
+            setOpenTow(!openTow);
+          }}
         />
         <CreateSubsStepTow
           handleClose={() => {
             setOpenTow(!openTow);
           }}
           open={openTow}
-          openStepTow={() => {
-            setOpen(!open);
-            setOpenTow(!openTow);
-          }}
         />
         <Button
           onClick={() => {

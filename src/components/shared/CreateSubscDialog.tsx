@@ -8,9 +8,11 @@ import Radio from "@mui/material/Radio";
 const CreateSubscDialog = ({
   open,
   handleClose,
+  openStepTow,
 }: {
   open: boolean;
   handleClose: () => void;
+  openStepTow: () => void;
 }) => {
   const [selectedValue, setSelectedValue] = useState("a");
 
@@ -105,6 +107,7 @@ const CreateSubscDialog = ({
         </div>
         <div className="flex justify-center gap-3 w-full text-white">
           <Button
+            onClick={openStepTow}
             variant="contained"
             sx={{
               width: "100%",
