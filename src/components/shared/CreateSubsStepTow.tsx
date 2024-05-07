@@ -50,6 +50,7 @@ const CreateSubsStepTow = ({
             <div className="flex flex-col items-center justify-center w-full">
               <ReactSVG src={RectangleIcon} />
             </div>
+            <div className="w-[20.188rem] h-7  rounded-lg border-[0.188rem] border-b-0 border-[#212426] "></div>
           </div>
 
           <div className="flex flex-col gap-2">

@@ -1,9 +1,9 @@
 import { Button, Dialog, IconButton } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import { ReactSVG } from "react-svg";
-import warningIcon from "assets/icons/Group.svg";
+import deActivateIcon from "assets/icons/DeactivateIcon.svg";
 
-const DeleteDialog = ({
+const DeactivateDialog = ({
   title,
   subTitle,
   open,
@@ -44,7 +44,7 @@ const DeleteDialog = ({
         </IconButton>
         <div className="flex flex-col gap-8 p-9 w-full bg-[#111315] item-center justify-center">
           <div className="flex flex-col items-center justify-center w-full">
-            <ReactSVG src={warningIcon} />
+            <ReactSVG src={deActivateIcon} />
           </div>
           <div className="flex flex-col items-center gap-4 w-full text-white">
             <span
@@ -65,19 +65,19 @@ const DeleteDialog = ({
               className="w-full md:w-96"
               variant="contained"
               sx={{
-                bgcolor: "#F23A3A",
+                bgcolor: "#f23a3a",
                 fontWeight: "700",
                 color: "white",
-                borderColor: "#F23A3A",
+                borderColor: "#f23a3a",
                 paddingY: "1rem",
                 borderRadius: "0.75rem",
                 ":hover": {
-                  borderColor: "#F23A3A",
-                  bgcolor: "#F23A3A",
+                  borderColor: "#f23a3a",
+                  bgcolor: "#f23a3a",
                 },
               }}
             >
-              حذف
+              نعم، الغاء الصنف
             </Button>
             <Button
               onClick={handleClose}
@@ -103,4 +103,4 @@ const DeleteDialog = ({
     </Dialog>
   );
 };
-export default DeleteDialog;
+export default DeactivateDialog;
