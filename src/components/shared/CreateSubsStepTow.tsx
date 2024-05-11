@@ -1,8 +1,7 @@
 import { Dialog, IconButton, Button } from "@mui/material";
-
 import { ReactSVG } from "react-svg";
 import CloseIcon from "@mui/icons-material/Close";
-import RectangleIcon from "assets/icons/Rectangle201.svg";
+import penIcon from "assets/icons/pen.svg";
 
 const CreateSubsStepTow = ({
   open,
@@ -41,34 +40,35 @@ const CreateSubsStepTow = ({
         </IconButton>
         <div className="flex flex-col gap-8 p-8 w-[37rem] bg-[#111315]  item-center justify-center">
           <div className="flex flex-col items-center gap-4 w-full text-white">
-            <span className="w-[407px] h-[39px] flex-grow-0 font-bold text-center text-white text-2xl leading-6">
+            <span className="w-[407px] h-[39px]  font-bold text-center text-white text-2xl leading-6">
               تم انشاء اشتراك
             </span>
-            <span className="w-[25rem] h-10 flex-grow-0 text-center text-[#9ea0a5] text-lg leading-6">
+            <span className="flex gap-2   text-[#9ea0a5] text-lg">
               تفاصيل الاشتراك
+              <ReactSVG src={penIcon} />
             </span>
-            <div className="flex flex-col items-center justify-center w-full">
-              <ReactSVG src={RectangleIcon} />
-            </div>
+
             <div className="w-[20.188rem] h-7  rounded-lg border-[0.188rem] border-b-0 border-[#212426] "></div>
           </div>
 
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-3">
             <div className="flex gap-6">
-              <div className="flex flex-col w-full gap-2">
+              <div className="flex flex-col w-full gap-2 justify-center items-center">
                 <span className="text-base font-normal text-black-300">
                   مدة الاشتراك
                 </span>
-                <div className="w-44-  px-7 py-3 rounded-2xl   bg-black-1000">
-                  <span className=" font-normal text-white">3 اشهر</span>
+                <div className="w-[11.188rem] py-3 px-5 bg-black-1000 rounded-2xl">
+                  <span className="text-base font-normal text-black-300">
+                    3 اشهر
+                  </span>
                 </div>
               </div>
-              <div className="flex flex-col w-full gap-2">
+              <div className="flex flex-col w-full gap-2 justify-center items-center">
                 <span className="text-base font-normal text-black-300">
                   البريد الالكتروني
                 </span>
-                <div className="w-44-  px-7 py-3 rounded-2xl   bg-black-1000">
-                  <span className="text-base font-normal text-white">
+                <div className="w-[11.188rem] py-3 px-5 bg-black-1000 rounded-2xl ">
+                  <span className="text-base font-normal text-black-300">
                     naif.a@gmail.com
                   </span>
                 </div>
