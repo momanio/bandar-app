@@ -5,6 +5,7 @@ import { ReactSVG } from "react-svg";
 import documentIcon from "assets/icons/document-download.svg";
 import redEye from "assets/icons/redEye.svg";
 import { redirect } from "react-router-dom";
+import ShowPicDialog from "./ShowPicDialog";
 
 const Tracking = () => {
   const [chartWidth, setChartWidth] = useState(0);
@@ -120,10 +121,7 @@ const Tracking = () => {
                   2024/2/30{" "}
                 </span>
                 <div className="flex gap-2 cursor-pointer" onClick={() => {}}>
-                  <ReactSVG src={redEye} />
-                  <span className="font-medium text-sm text-[#FFC9C9]">
-                    عرض
-                  </span>
+                  <ShowPicDialog />
                 </div>
               </div>
             </div>

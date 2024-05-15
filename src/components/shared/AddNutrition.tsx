@@ -109,7 +109,7 @@ const AddNutrition = ({
           </Button>
         </div>
       )}
-      <div className="flex flex-col gap-3 w-full">
+      <div className="flex flex-col  gap-3 w-full">
         <span className="text-base font-medium text-white">{label}</span>
         <InputText
           onChange={() => {}}

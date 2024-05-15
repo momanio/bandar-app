@@ -1,10 +1,13 @@
-import Button from "@mui/material/Button";
-
+import DeleteDialog from "components/shared/DeleteDialog";
+import CreateSubscDialog from "../../shared/CreateSubscDialog";
+import ShowUserDialog from "./ShowUserDialog";
+import { Button } from "@mui/material";
+import { useState } from "react";
 import addIcon from "assets/icons/addIcon.svg";
-import eyeIcon from "assets/icons/eye.svg";
+import CreateSubsStepTow from "components/shared/CreateSubsStepTow";
 import { ReactSVG } from "react-svg";
-import trash from "assets/icons/trash.svg";
-import Dialogt1 from "components/shared/Dialog";
+import eyeIcon from "assets/icons/eye.svg";
+import trashIcon from "assets/icons/trashIcon.svg";
 const RequestCard = ({
   name,
   mobile,
@@ -18,6 +21,10 @@ const RequestCard = ({
   age: string;
   date: string;
 }) => {
+  const [open, setOpen] = useState(false);
+  const [openTow, setOpenTow] = useState(false);
+  const [settingModel, setSettingModel] = useState(false);
+  const [deleteModal, setDeleteModal] = useState(false);
   return (
     <div className="flex items-center w-full py-4 pr-[3.125rem] pl-[2.813rem] justify-between odd:bg-[#1a1d1f] even:bg-[#272b304d] text-[#f3f3f4] ">
       <div className="w-fit ">{name}</div>
@@ -27,7 +34,9 @@ const RequestCard = ({
       <div className="w-fit ">{date}</div>
       <div className="flex gap-4 w-fit">
         <Button
-          onClick={() => {}}
+          onClick={() => {
+            setOpen(!open);
+          }}
           variant="contained"
           sx={{
             bgcolor: "#F23A3A",
@@ -49,13 +58,16 @@ const RequestCard = ({
           انشاء اشتراك
         </Button>
         <Button
+          onClick={() => {
+            setSettingModel(!settingModel);
+          }}
           sx={{
             bgcolor: "#333638",
-            fontWeight: "700",
-            color: "#BABBBE",
+            color: "#fff",
             borderColor: "#333638",
-            gap: "0.625rem",
+            display: "flex",
             padding: "0.375rem",
+            minWidth: "2rem",
             borderRadius: "0.75rem",
             alignItems: "center",
             ":hover": {
@@ -68,6 +80,9 @@ const RequestCard = ({
           عرض
         </Button>
         <Button
+          onClick={() => {
+            setDeleteModal(!deleteModal);
+          }}
           sx={{
             bgcolor: "#333638",
             borderColor: "#333638",
@@ -82,10 +97,39 @@ const RequestCard = ({
             },
           }}
         >
-          <ReactSVG src={trash} />
+          <ReactSVG src={trashIcon} />
         </Button>
+        <CreateSubscDialog
+          handleClose={() => {
+            setOpen(!open);
+          }}
+          open={open}
+          openStepTow={() => {
+            setOpen(!open);
+            setOpenTow(!openTow);
+          }}
+        />
+        <CreateSubsStepTow
+          handleClose={() => {
+            setOpenTow(!openTow);
+          }}
+          open={openTow}
+        />
+        <ShowUserDialog
+          handleClose={() => {
+            setSettingModel(!settingModel);
+          }}
+          open={settingModel}
+        />
+        <DeleteDialog
+          title="حذف طلب التسجيل"
+          subTitle="عند حذفك لهذا الطلب لن تتمكن من استرجاعه"
+          handleClose={() => {
+            setDeleteModal(!deleteModal);
+          }}
+          open={deleteModal}
+        />
       </div>
-      <Dialogt1 />
     </div>
   );
 };
