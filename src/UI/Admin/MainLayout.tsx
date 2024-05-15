@@ -1,6 +1,15 @@
 import Header from "components/shared/Header";
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { isLoggedIn } from "services/Admin/authService";
 
 const MainLayout = ({ children }: { children: React.ReactNode }) => {
+  const navigate = useNavigate();
+  useEffect(() => {
+    if (isLoggedIn()) {
+      navigate("/admin/dashboard/");
+    }
+  }, []);
   return (
     <div className="bg-black-950 flex flex-col h-full">
       <Header />
