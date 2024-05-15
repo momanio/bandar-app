@@ -3,6 +3,9 @@ import redSalad from "assets/icons/redSalad.svg";
 import { useState } from "react";
 import { Button, Dialog, IconButton } from "@mui/material";
 import AddNutrition from "components/shared/AddNutrition";
+import boart from "assets/icons/boart.svg";
+import protein from "assets/icons/protein.svg";
+import fire from "assets/icons/fire.svg";
 import { ReactSVG } from "react-svg";
 const AddFood = ({
   show,
@@ -14,6 +17,7 @@ const AddFood = ({
   const [activeIndex, setActiveIndex] = useState<number>(0);
   const model = [
     <AddNutrition
+      itemType="صورة الصنف"
       label="اسم الصنف الغذائي"
       placeHolder="أدخل اسم الصنف"
       icon={<ReactSVG src={redSalad} />}
@@ -21,52 +25,51 @@ const AddFood = ({
         setActiveIndex(activeIndex + 1);
       }}
     />,
-    <div>
-      <div className="w-96 py-5 text-[#9ea0a5] text-2xl">
-        <span>معلومات عن بيض مسلوق</span>
-      </div>
-      <div className="flex py-10 gap-[3rem]">
-        <span className="text-base font-normal text-white">اسم فئة الغداء</span>
-        <div className="flex gap-4 px-3.5 py-3 rounded-2xl bg-[#111315]">
-          <ReactSVG src={redSalad} />
-          <span className="text-base font-normal text-white">
-            اسم فئة الغداء
-          </span>
+    <div className="flex flex-col gap-8 w-full">
+      <span className="font-bold text-2xl text-black-400">
+        معلومات عن بيض مسلوق
+      </span>
+      <div className="flex gap-5 w-full">
+        <div className="flex flex-col gap-2 w-full">
+          <span className="font-medium text-base text-white">فئة الغذاء</span>
+          select1
         </div>
-        <span className="text-base font-normal text-white">اسم فئة الغداء</span>
-        <div className="flex gap-4 px-3.5 py-3 rounded-2xl bg-[#111315]">
-          <ReactSVG src={redSalad} />
-          <span className="text-base font-normal text-white">
-            اسم وحدة القياس
-          </span>
+        <div className="flex flex-col gap-2 w-full">
+          <span className="font-medium text-base text-white">وحدة القياس</span>
+          select2
         </div>
       </div>
-
-      <div className="flex flex-col py-5 gap-3 w-auto">
-        <div className="flex gap-3 items-center justify-center">
-          <div className="w-48 px-7 py-3 rounded-2xl border border-black-700 flex flex-col items-center justify-center">
-            <span className="font-bold text-white">0</span>
-            <span className="w-20 h-6 text-sm font-medium text-right text-[#9ea0a5]">
+      <div className="flex gap-[1.125rem]">
+        <div className="w-1/3 border border-[#212426] rounded-3xl px-5 py-7 flex flex-col gap-3 items-center">
+          input1
+          <div className="flex gap-2">
+            <ReactSVG src={fire} />
+            <span className="font-medium text-base  text-black-400">
               سعرات حرارية
             </span>
           </div>
-          <div className="w-48 px-7 py-3 rounded-2xl border border-black-700 flex flex-col items-center justify-center">
-            <span className="font-bold text-white">0</span>
-            <span className="w-20 h-6 text-sm font-medium text-right text-[#9ea0a5]">
+        </div>
+        <div className="w-1/3 border border-[#212426] rounded-3xl px-5 py-7 flex flex-col gap-3 items-center">
+          input2
+          <div className="flex gap-2">
+            <ReactSVG src={boart} />
+            <span className="font-medium text-base  text-black-400">
               كربوهيدرات
             </span>
           </div>
-          <div className="w-48 px-7 py-3 rounded-2xl border border-black-700 flex flex-col items-center justify-center">
-            <span className="font-bold text-white">0</span>
-
-            <span className="w-20 h-6 text-sm font-medium text-right text-[#9ea0a5]">
+        </div>
+        <div className="w-1/3 border border-[#212426] rounded-3xl px-5 py-7 flex flex-col gap-3 items-center">
+          input3
+          <div className="flex gap-2">
+            <ReactSVG src={protein} />
+            <span className="font-medium text-base  text-black-400">
               بروتين
             </span>
           </div>
         </div>
       </div>
-
       <Button
+        onClick={() => {}}
         sx={{
           width: "100%",
           bgcolor: "#F23A3A",

@@ -1,15 +1,10 @@
 import React, { useState } from "react";
 import { ReactSVG } from "react-svg";
 import uploadImage from "assets/icons/uploadImage.svg";
-import {
-  Button,
-  IconButton,
-  InputAdornment,
-  TextField,
-  styled,
-} from "@mui/material";
+import { Button, IconButton, styled } from "@mui/material";
 import addCircle from "assets/icons/add-circle.svg";
 import CloseIcon from "@mui/icons-material/Close";
+import InputText from "./InputText";
 
 const VisuallyHiddenInput = styled("input")({
   clip: "rect(0 0 0 0)",
@@ -28,11 +23,15 @@ const AddNutrition = ({
   placeHolder,
   label,
   icon,
+  itemType,
+  supportType = false,
 }: {
   nextActive: () => void;
   placeHolder: string;
   label: string;
   icon: React.ReactNode;
+  itemType: string;
+  supportType?: boolean;
 }) => {
   const [image, setImage] = useState<string | undefined>(undefined);
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -71,10 +70,19 @@ const AddNutrition = ({
       ) : (
         <div className="bg-[#212426] rounded-2xl h-[26.438rem] w-[26.438rem] flex flex-col items-center py-10 px-[5.313rem]">
           <ReactSVG src={uploadImage} />
-          <span className="text-sm font-bold text-white">صورة الصنف</span>
-          <span className="text-sm font-normal text-black-500 text-center pt-3 pb-8">
+          <span className="text-sm font-bold text-white">{itemType}</span>
+          <span
+            className={`text-sm font-normal text-black-500 text-center pt-3 ${
+              supportType ? "pb-4" : "pb-8"
+            }`}
+          >
             يجب أن يكون حجم الصورة أقل من 2 ميجابايت ويجب أن تكون أبعادها مربعة
           </span>
+          {supportType && (
+            <span className="text-sm font-normal text-black-300 text-center pb-4">
+              الصيغ المدعومة: gif,png,jpg
+            </span>
+          )}
           <Button
             component="label"
             variant="contained"
@@ -103,21 +111,14 @@ const AddNutrition = ({
       )}
       <div className="flex flex-col  gap-3 w-full">
         <span className="text-base font-medium text-white">{label}</span>
-        <TextField
-          sx={{
-            input: { color: "#9EA0A5", paddingLeft: 5 },
-          }}
-          InputLabelProps={{
-            style: { fontWeight: "400", marginRight: 30 },
-          }}
-          InputProps={{
-            endAdornment: (
-              <InputAdornment position="start">{icon}</InputAdornment>
-            ),
-          }}
-          className="bg-black-950 rounded-[20px]"
-          label={placeHolder}
-          variant="outlined"
+        <InputText
+          onChange={() => {}}
+          type="text"
+          value={"dd"}
+          placeHolder={placeHolder}
+          icon={
+            <div className="flex items-center justify-center ps-3">{icon}</div>
+          }
         />
       </div>
       <Button
