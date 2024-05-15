@@ -5,10 +5,10 @@ import { isLoggedIn } from "services/Admin/authService";
 export const AuthLayout = ({ children }: { children: React.ReactNode }) => {
   const navigate = useNavigate();
   useEffect(() => {
-    if (isLoggedIn()) {
-      navigate("/admin/dashboard/");
+    if (!isLoggedIn()) {
+      navigate("/");
     }
-  }, []);
+  }, [navigate]);
   return (
     <>
       <div className="bg-black-950 h-full relative overflow-hidden overflow-y-auto">

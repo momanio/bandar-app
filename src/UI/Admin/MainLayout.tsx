@@ -9,7 +9,7 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
     if (isLoggedIn()) {
       navigate("/admin/dashboard/");
     }
-  }, []);
+  }, [navigate]);
   return (
     <div className="bg-black-950 flex flex-col h-full">
       <Header />
